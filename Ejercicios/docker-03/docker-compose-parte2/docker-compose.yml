@@ -1,0 +1,19 @@
+version: '3'
+services:
+ db:
+  image: mariadb:latest
+  environment:
+   - MYSQL_DATABASE=wordpress
+   - MYSQL_ROOT_PASSWORD=mariadb
+  networks:
+   - redDocker
+ web:
+  image: wordpress:latest
+  depends_on:
+   - db
+  ports:
+   - "82:80"
+  networks:
+   - redDocker
+networks:
+ redDocker:
