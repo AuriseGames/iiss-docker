@@ -44,7 +44,7 @@ volumes:                            // volúmenes que se usan en el docker-compo
 
 ---
 
-### Parte 2
+## Parte 2
 
 1) Crear un fichero `docker-compose.yml` con dos servicios: wordpress +  mariadb.
 2) Hacer que el servicio wordpress utilice el puerto 82.
